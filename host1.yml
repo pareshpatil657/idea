@@ -3,6 +3,13 @@
    gather_facts: no
    become: true
    tasks:
+   - name: Install dependent python modules
+     pip:
+      name: "{{item}}"
+      state: present
+     with_items:
+      - docker-py==1.10.6
+      - docker-compose==1.9.0 
    
    - name: Pull hello world image 
      docker_image: 

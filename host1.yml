@@ -5,6 +5,7 @@
    tasks:
    
    - name: Pull hello world image 
-     docker_image: hello-world:latest
+     docker_image: 
+       name: hello-world:latest
       
       

@@ -1,0 +1,6 @@
+--- 
+
+ - import_playbook: host1.yml
+ 
+ 
+

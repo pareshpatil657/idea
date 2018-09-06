@@ -1,0 +1,10 @@
+--- 
+ - hosts: test
+   gather_facts: no
+ 
+   tasks:
+   
+   - name: Pull hello world image 
+     docker_image: hello-world:latest
+      
+      
